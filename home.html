@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html style="background-image: url('background.jpg'); background-size: cover; background-position: center;">
+    <head>
+        <title>Home page</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Add the following style to the head section for navbar spacing -->
+        <style>
+            .navbar {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        </style>
+        <script>
+            function goToRegister(cardName){
+                window.location.href = 'register.html?card=' + cardName;
+            }
+        </script>
+        <base href="http://localhost/website/home.html">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#courses">Courses</a>
+            <a href="admin-login.html">Admin Login</a>
+        </div>
+
+        <div class="top">
+            <img src="./images/college_logo.jpg" alt="" >
+            <blockquote style="font-family: sans-serif; font-size: 20;">
+                <img src="mortarboard-fill.svg" alt="mortarboard-fill.svg"  >
+                Welcome to <strong>BVRIT</strong>, where education meets inspiration, and dreams take flight! Nestled in the heart of Narsapur, our vibrant campus is more than 
+                just a place of learning; it's a community that fosters growth, innovation, and lifelong connections.
+    
+                At BVRIT, we believe in the transformative power of education. Our dedicated faculty members are not just educators; they are mentors, guides, 
+                and collaborators on your journey to academic excellence. With state-of-the-art facilities, cutting-edge research opportunities, and a curriculum designed 
+                to prepare you for the challenges of tomorrow, we are committed to providing an environment where curiosity thrives.
+            </blockquote>
+            
+            
+        </div>
+        <div id="courses" class="container">
+                <div class="box">
+                  <div class="card-header">
+                    <strong>CSE</strong>
+                     </div>
+                <div class="card-body">
+                    <p>
+                        Computer Science and Engineering (CSE) is an exciting and in-demand field in engineering. It provides a broad range of fundamental and advanced concepts for students.
+                    </p>
+                    <ul>
+                        <li>Programming Languages</li>
+                        <li>DSA</li>
+                        <li>DBMS</li>
+                        <li>Computer Networks</li>
+                        <li>Operating Systems</li>
+                        <li>Data Science</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button class="button" onclick="goToRegister('CSE')">Register</button>
+                </div>
+             </div> 
+             
+             <div class="box"> 
+                    <div class="card-header">
+                        <strong>ECE</strong>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Electrical and Computer Engineering (ECE) program offers students to study a combination of electrical engineering and computer science topics.
+                        </p>
+                        <ul>
+                            <li>Circuit Analysis and Design</li>
+                            <li>Electronics</li>
+                            <li>Signals and Systems</li>
+                            <li>Digital Logic and Design</li>
+                            <li>Microcontrollers and Microprocessors</li>
+                            <li>VLSI Design</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="button" onclick="goToRegister('ECE')">Register</button>
+                    </div>
+             </div>
+             <div class="box">
+                    <div class="card-header">
+                        <strong>MECH</strong>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Mechanical Engineering (MechE) program offers students to study a diverse range of topics related to the principles and applications of mechanical systems.
+                        </p>
+                        <ul>
+                            <li>Statics and Dynamics</li>
+                            <li>Mechanics of Materials</li>
+                            <li>DBMS</li>
+                            <li>Thermodynamics</li>
+                            <li>Fluid Mechanics</li>
+                            <li>Heat Transfer</li>
+                            <li>Heat Transfer</li>
+                        </ul>
+                    </div>
+                   <div class="card-footer">
+                    <button class="button" onclick="goToRegister('MechE')">Register</button>
+                   </div>
+            </div>
+        </div>
+    </body>
+</html>

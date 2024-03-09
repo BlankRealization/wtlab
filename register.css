@@ -1,0 +1,43 @@
+body {
+    background-image: url('regbackground.jpg'); /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    background-color: rgba(240, 255, 255, 0.9); /* Adjusted background color for better readability */
+    color: black;
+    font-weight: bold;
+}
+
+.form-body {
+    padding: 10px;
+}
+
+input {
+    margin: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 150px;
+}
+
+label {
+    margin-right: 10px;
+}
+
